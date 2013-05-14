@@ -8,12 +8,21 @@
 
 <h:head></h:head>
 <body>
-	<rich:panel>
-		<f:facet name="header">
+	<h:form style="width:400px; margin-left:auto; margin-right:auto">
+		<rich:panel>
+			<f:facet name="header">
+				<h:outputText value="Bienvenido [usuario]!!" />
+			</f:facet>
 			<h:outputText
-				value="Write your own custom rich components with built-in AJAX support" />
-		</f:facet>
-		<h:outputText value="Panel Body" />
-	</rich:panel>
+				value="Por favor seleccione la opcion que desea realizar:" />
+			<h:panelGrid columns="2">
+				<a4j:commandButton value="Administracion de usuarios" />
+
+				<a4j:commandButton value="Consulta de usuarios" />
+				<a4j:commandButton value="Administracion de servicios" />
+				<a4j:commandButton value="Consulta de servicios" />
+			</h:panelGrid>
+		</rich:panel>
+	</h:form>
 </body>
 </html>
