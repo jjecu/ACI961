@@ -2,8 +2,9 @@
 <persistence version="2.0"
 	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	<persistence-unit name="globaltech-soagovernance-persistance">
+	<persistence-unit name="globaltech-soagovernance-persistence">
 		<jta-data-source>java:/globaltechDS</jta-data-source>
+		<class>com.globaltech.domain.entities.Cliente</class>
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
