@@ -5,13 +5,13 @@ package com.globaltech.domain.services;
 
 import javax.ejb.Local;
 
-import com.globaltech.domain.entities.Cliente;
+import com.globaltech.domain.entities.Usuario;
 
 /**
  * @author smmenam
  *
  */
 @Local
-public interface IClienteService {
-	public void guardar(Cliente cliente);
+public interface IUsuarioService {
+	public void guardar(Usuario usuario);
 }

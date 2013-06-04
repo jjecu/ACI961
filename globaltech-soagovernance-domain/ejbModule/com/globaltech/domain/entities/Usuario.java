@@ -7,12 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Entity implementation class for Entity: Cliente
+ * Entity implementation class for Entity: Usuario
  * 
  */
 @Entity
 @Table(name = "CLIENTE")
-public class Cliente implements Serializable {
+public class Usuario implements Serializable {
 
 	@Id
 	private String cedula;
@@ -21,7 +21,7 @@ public class Cliente implements Serializable {
 	private String cargo;
 	private static final long serialVersionUID = 1L;
 
-	public Cliente() {
+	public Usuario() {
 		super();
 	}
 
