@@ -3,10 +3,12 @@
  */
 package com.globaltech.domain.services.impl;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import com.globaltech.domain.entities.Usuario;
 import com.globaltech.domain.services.IUsuarioService;
+import com.globaltech.soagovernance.persistence.dao.IBasicDao;
 
 /**
  * @author smmenam
@@ -14,9 +16,17 @@ import com.globaltech.domain.services.IUsuarioService;
  */
 @Stateless
 public class UsuarioServiceImpl implements IUsuarioService{
+	
+	@EJB(mappedName = "IBasicDaoImpl/local")
+	private IBasicDao<Usuario> basicDao;
 
 	public void guardar(Usuario usuario) {
-		// TODO Auto-generated method stub
+		try {
+			basicDao.persist(usuario);
+		} catch (Exception e) {
+			// TODO reemplazar con log4j, arrojar una excepcion personalizada
+			e.printStackTrace();
+		}
 		
 	}
 
