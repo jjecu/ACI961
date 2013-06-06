@@ -7,7 +7,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import com.globaltech.domain.entities.Usuario;
-import com.globaltech.domain.services.IUsuarioService;
+import com.globaltech.domain.services.IGenericService;
 import com.globaltech.soagovernance.persistence.dao.IBasicDao;
 
 /**
@@ -15,7 +15,7 @@ import com.globaltech.soagovernance.persistence.dao.IBasicDao;
  *
  */
 @Stateless
-public class UsuarioServiceImpl implements IUsuarioService{
+public class UsuarioServiceImpl {
 	
 	@EJB(mappedName = "IBasicDaoImpl/local")
 	private IBasicDao<Usuario> basicDao;

@@ -19,6 +19,7 @@ public class IBasicDaoImpl<T> implements IBasicDao<T> {
 
 	@PersistenceContext
 	private EntityManager entityManager;
+	
 
 	public boolean persist(T t) throws Exception {
 
