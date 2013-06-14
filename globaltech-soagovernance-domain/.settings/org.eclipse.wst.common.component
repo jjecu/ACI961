@@ -3,6 +3,7 @@
     <wb-module deploy-name="globaltech-soagovernance-domain">
         <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
         <wb-resource deploy-path="/" source-path="/test"/>
+        <wb-resource deploy-path="/" source-path="/resources"/>
         <property name="java-output-path" value="/globaltech-soagovernance-domain/build/classes"/>
     </wb-module>
 </project-modules>

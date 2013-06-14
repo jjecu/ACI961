@@ -4,24 +4,23 @@
  * Copyright 2013 TCS.
  * Todos los derechos reservados.
  */
-package com.globaltech.domain.services.remote;
+package com.globaltech.domain.services;
 
 import java.util.List;
 
-import javax.ejb.Remote;
+import javax.ejb.Local;
 
 import com.globaltech.domain.entities.Usuario;
-import com.globaltech.domain.services.IGenericService;
 import com.globaltech.soagovernance.persistence.error.GlobaltechPersistenceError;
 
 /**
- * <b> Contrato para pruebas unitarias que extiende del servicio generico para trabajr con la tabla de Usuario. </b>
+ * <b> Contrato que extiende del servicio generico para trabajr con la tabla de Usuario. </b>
  * 
  * @author Martin Mena
  * @version $1.0$
  */
-@Remote
-public interface IUsuarioServiceRemote extends IGenericService<Usuario> {
+@Local
+public interface IUsuarioService extends IGenericService<Usuario> {
 	/**
 	 * <b> Metodo que se conecta con la capa de persistencia para obtener todos los registros de la tabla USUARIO. </b>
 	 * <p>

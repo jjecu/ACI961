@@ -8,10 +8,9 @@ import javax.persistence.Table;
 
 /**
  * Entity implementation class for Entity: Usuario
- * 
  */
 @Entity
-@Table(name = "CLIENTE")
+@Table(name = "USUARIO")
 public class Usuario implements Serializable {
 
 	@Id
